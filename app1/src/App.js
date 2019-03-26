@@ -1,18 +1,20 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import './logo.svg';
 import './App.css';
 
 class App extends Component {
-  constuctor(props) {
+  constuctor() {
+    super()
 
     this.state = {
       myName: 'Joe'
     }
   }
   render() {
+    const name = this.state.myName;
     return (
       <div className="App">
-        My name is { this.state.myName }
+        <h3>My name is</h3> { name }
       </div>
     );
   }
